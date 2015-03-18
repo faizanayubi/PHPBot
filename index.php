@@ -8,15 +8,15 @@ require_once './lib/WebBot/bootstrap.php';
 
 // URLs to fetch data from
 $urls = [
-	'search' => 'www.google.com',
-	'chrome' => 'www.google.com/intl/en/chrome/browser/',
-	'products' => 'www.google.com/intl/en/about/products/'
+    'search' => 'www.google.com',
+    'chrome' => 'www.google.com/intl/en/chrome/browser/',
+    'products' => 'www.google.com/intl/en/about/products/'
 ];
 
 // document fields [document field ID => document field regex pattern, [...]]
 $document_fields = [
-	'title' => '<title.*>(.*)<\/title>',
-	'h2' => '<h2[^>]*?>(.*)<\/h2>',
+    'title' => '<title.*>(.*)<\/title>',
+    'h2' => '<h2[^>]*?>(.*)<\/h2>',
 ];
 
 // set WebBot object
@@ -32,20 +32,20 @@ echo $webbot->total_documents_failed . ' total documents failed to fetch <br /><
 
 
 // check if fetch(es) successful
-if($webbot->success) {
-	// display each document
-	foreach($webbot->getDocuments() as /* \WebBot\Document */ $document) {
-		$data = $document->find('<title>', '</title>'); // get       // '<title>[data]'
-    	if($data) {
-    		print_r($data);
-    	}
-    	else
-    	{
-    		echo 'Data not found <br />';
-    	}
-	}
+if ($webbot->success) {
+    // display each document
+    foreach ($webbot->getDocuments() as /* \WebBot\Document */ $document) {
+        $data = $document->find('<title>', '</title>'); // get       // '<title>[data]'
+        if ($data) {
+            print_r($data);
+        } else {
+            echo 'Data not found <br />';
+        }
+    }
+} else { // not successful, display error
+    echo 'Failed, error: ' . $webbot->error;
 }
-else // not successful, display error
-{
-	echo 'Failed, error: ' . $webbot->error;
-}
+
+// see logs
+echo '<hr>';
+echo '<pre>', print_r($webbot->getLog()), '</pre>';

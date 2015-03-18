@@ -1,10 +1,10 @@
 <?php
 namespace HTTP;
 /**
-* Bootstrap file
-* 
-* @package HTTP
-*/
+ * Bootstrap file
+ * 
+ * @package HTTP
+ */
 
 // load class files 
 require_once './lib/HTTP/request.php';
