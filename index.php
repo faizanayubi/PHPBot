@@ -8,9 +8,9 @@ require_once './lib/WebBot/bootstrap.php';
 
 // URLs to fetch data from
 $urls = [
+    'ecommerce' => 'www.amazon.in',
     'search' => 'www.google.com',
-    'chrome' => 'www.google.com/intl/en/chrome/browser/',
-    'products' => 'www.google.com/intl/en/about/products/'
+    'social' => 'https://twitter.com/faizanayubi'
 ];
 
 // document fields [document field ID => document field regex pattern, [...]]
@@ -47,5 +47,5 @@ if ($webbot->success) {
 }
 
 // see logs
-echo '<hr>';
+echo '<hr><b>Logs</b>';
 echo '<pre>', print_r($webbot->getLog()), '</pre>';
