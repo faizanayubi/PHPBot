@@ -1,6 +1,8 @@
 # PHPBot
 Complete Automated Web Bot Library in PHP that navigates on its own and fetches the customize field in a website
 
+![PHPBot](https://github.com/faizanayubi/PHPBot/blob/master/Output.PNG?raw=true)
+
 ## Features
 1. Uses Proxy
 2. Database Storage (to be added soon)
@@ -36,7 +38,7 @@ $webbot->execute();
 ```
 
 5. Result
-
+![PHPBot](https://github.com/faizanayubi/PHPBot/blob/master/Output.PNG?raw=true)
 
 For Complete Code info and how to display output see index.php
 
