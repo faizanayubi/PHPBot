@@ -5,6 +5,7 @@ namespace HTTP;
  * HTTP Response class
  *
  * @package HTTP
+ * @author Faizan Ayubi <indianayubi@gmail.com>
  */
 class Response {
     /**

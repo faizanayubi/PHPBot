@@ -4,7 +4,8 @@ namespace HTTP;
 
 /**
  * HTTP Request class – execute HTTP get and head requests *  
- * * @package HTTP 
+ * @package HTTP 
+ * @author Faizan Ayubi <indianayubi@gmail.com>
  */
 class Request {
     /**
