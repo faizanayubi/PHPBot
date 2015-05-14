@@ -7,6 +7,7 @@ use WebBot\WebBot;
  * WebBot Document class
  *
  * @package WebBot
+ * @author Faizan Ayubi <indianayubi@gmail.com>
  */
 class Document {
 

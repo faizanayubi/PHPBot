@@ -8,6 +8,7 @@ use WebBot\Document;
  * WebBot class - fetch document data from Website URLs
  *
  * @package WebBot
+ * @author Faizan Ayubi <indianayubi@gmail.com>
  */
 class WebBot {
     /**
